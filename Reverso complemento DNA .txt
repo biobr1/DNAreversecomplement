@@ -1,0 +1,20 @@
+def getCompl(seq):
+    textoResultado = ""
+    for letter in seq:
+        if letter == "C":
+            textoResultado += "G"
+        elif letter == "G":
+            textoResultado += "C"
+        elif letter == "A":
+            textoResultado += "T"
+        elif letter == "T":
+            textoResultado += "A"
+        else:
+            textoResultado += letter  # Si no es una de las bases A, T, C o G, se mantiene igual
+    return textoResultado
+
+trySeq = "GATACCA;"
+
+result = getCompl(trySeq)
+
+print(result)
